@@ -1,13 +1,13 @@
-package com.wasfa.api;
+package com.BugAndResolution.BugAndResolution;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WasfaApiApplication {
+public class BugAndResolutionApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WasfaApiApplication.class, args);
+		SpringApplication.run(BugAndResolutionApplication.class, args);
 	}
 
 }
