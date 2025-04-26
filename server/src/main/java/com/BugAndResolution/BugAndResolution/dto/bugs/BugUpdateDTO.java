@@ -6,8 +6,8 @@ import com.BugAndResolution.BugAndResolution.model.enums.Status;
 public class BugUpdateDTO {
     private Long bugId;
     private Status status;
-    private Integer developerId;
-    private Integer submittedById;
+    private Long developerId;
+    private Long submittedById;
     private String title;
     private String description;
     private String severity;
@@ -39,11 +39,11 @@ public class BugUpdateDTO {
         this.severity = severity;
     }
 
-    public Integer getSubmittedById() {
+    public Long getSubmittedById() {
         return submittedById;
     }
 
-    public void setSubmittedById(Integer submittedById) {
+    public void setSubmittedById(Long submittedById) {
         this.submittedById = submittedById;
     }
 
@@ -63,11 +63,11 @@ public class BugUpdateDTO {
         this.status = status;
     }
 
-    public Integer getDeveloperId() {
+    public Long getDeveloperId() {
         return developerId;
     }
 
-    public void setDeveloperId(Integer developerId) {
+    public void setDeveloperId(Long developerId) {
         this.developerId = developerId;
     }
 }

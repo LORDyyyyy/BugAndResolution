@@ -5,17 +5,17 @@ import com.BugAndResolution.BugAndResolution.model.enums.Role;
 import java.time.LocalDateTime;
 
 public class UserResponseDTO {
-    private Integer id;
+    private Long id;
     private String name;
     private String email;
     private Role role;
     private LocalDateTime createdAt;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

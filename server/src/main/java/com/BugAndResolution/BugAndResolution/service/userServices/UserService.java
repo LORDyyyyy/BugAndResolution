@@ -22,7 +22,7 @@ public class UserService {
         return mapToUserResponseDTO(savedUser);
     }
 
-    public UserResponseDTO updateUser(Integer id, UserRequestDTO dto) {
+    public UserResponseDTO updateUser(Long id, UserRequestDTO dto) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
@@ -42,13 +42,13 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-    public UserResponseDTO getUserById(Integer id) {
+    public UserResponseDTO getUserById(Long id) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
         return mapToUserResponseDTO(user);
     }
 
-    public void deleteUser(Integer id) {
+    public void deleteUser(Long id) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
         userRepository.delete(user);

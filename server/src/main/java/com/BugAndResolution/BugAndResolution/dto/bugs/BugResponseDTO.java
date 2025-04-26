@@ -10,8 +10,8 @@ public class BugResponseDTO {
     private String description;
     private String severity;
     private Status status;
-    private Integer developerId;
-    private Integer submittedById;
+    private Long developerId;
+    private Long submittedById;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
@@ -57,19 +57,19 @@ public class BugResponseDTO {
         this.status = status;
     }
 
-    public Integer getDeveloperId() {
+    public Long getDeveloperId() {
         return developerId;
     }
 
-    public void setDeveloperId(Integer developerId) {
+    public void setDeveloperId(Long developerId) {
         this.developerId = developerId;
     }
 
-    public Integer getSubmittedById() {
+    public Long getSubmittedById() {
         return submittedById;
     }
 
-    public void setSubmittedById(Integer submittedById) {
+    public void setSubmittedById(Long submittedById) {
         this.submittedById = submittedById;
     }
 

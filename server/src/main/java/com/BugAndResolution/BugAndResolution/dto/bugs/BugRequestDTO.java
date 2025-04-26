@@ -5,12 +5,12 @@ public class BugRequestDTO {
     private String title;
     private String description;
     private String severity;
-    private Integer submittedById;
-    private Integer developerId;
+    private Long submittedById;
+    private Long developerId;
 
     public BugRequestDTO() {}
 
-    public BugRequestDTO(String title, String description, String severity, Integer submittedById) {
+    public BugRequestDTO(String title, String description, String severity, Long submittedById) {
         this.title = title;
         this.description = description;
         this.severity = severity;
@@ -41,19 +41,19 @@ public class BugRequestDTO {
         this.severity = severity;
     }
 
-    public Integer getSubmittedById() {
+    public Long getSubmittedById() {
         return submittedById;
     }
 
-    public void setSubmittedById(Integer submittedById) {
+    public void setSubmittedById(Long submittedById) {
         this.submittedById = submittedById;
     }
 
-    public Integer getDeveloperId() {
+    public Long getDeveloperId() {
         return developerId;
     }
 
-    public void setDeveloperId(Integer developerId) {
+    public void setDeveloperId(Long developerId) {
         this.developerId = developerId;
     }
 }

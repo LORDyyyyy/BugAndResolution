@@ -5,8 +5,6 @@ import com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO;
 import com.BugAndResolution.BugAndResolution.service.bugServices.BugService;
 import jakarta.validation.Valid;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,8 +17,6 @@ public class BugController {
 
     @Autowired
     private BugService bugService;
-    @Autowired
-    private static final Logger logger = LoggerFactory.getLogger(BugController.class);
 
     @PostMapping
     public ResponseEntity<BugResponseDTO> createBug(@RequestBody @Valid BugRequestDTO dto) {
