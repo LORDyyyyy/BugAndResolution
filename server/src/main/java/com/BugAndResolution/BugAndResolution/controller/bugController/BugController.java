@@ -40,4 +40,10 @@ public class BugController {
         dto.setBugId(bugId);
         return ResponseEntity.ok(bugService.updateBug(dto));
     }
+
+    @DeleteMapping("{bugId}")
+    public ResponseEntity<BugResponseDTO>deleteBug(@PathVariable Long bugId){
+        bugService.deleteBug(bugId);
+        return ResponseEntity.noContent().build();
+    }
 }
