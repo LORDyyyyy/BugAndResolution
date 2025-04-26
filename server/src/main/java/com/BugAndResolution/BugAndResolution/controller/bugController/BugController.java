@@ -40,4 +40,14 @@ public class BugController {
         dto.setBugId(bugId);
         return ResponseEntity.ok(bugService.updateBug(dto));
     }
+    
+    @GetMapping("/filter-by-developer/{developerId}")
+    public ResponseEntity<List<BugResponseDTO>> filterByDeveloperId(@PathVariable Long developerId) {
+        return ResponseEntity.ok(bugService.getBugsByDeveloperId(developerId));
+    }
+
+    @GetMapping("filter-by-status/{status}")
+    public ResponseEntity<List<BugResponseDTO>> filterByStatus(@PathVariable String status) {
+        return ResponseEntity.ok(bugService.getBugsByStatus(status));
+    }
 }
