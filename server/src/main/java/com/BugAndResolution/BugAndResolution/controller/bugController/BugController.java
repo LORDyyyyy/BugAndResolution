@@ -3,10 +3,7 @@ package com.BugAndResolution.BugAndResolution.controller.bugController;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugRequestDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO;
-import com.BugAndResolution.BugAndResolution.model.entities.User;
-import com.BugAndResolution.BugAndResolution.model.enums.Status;
 import com.BugAndResolution.BugAndResolution.service.bugServices.BugService;
-import com.BugAndResolution.BugAndResolution.service.userServices.UserService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +20,6 @@ public class BugController {
     @Autowired
     private BugService bugService;
     @Autowired
-    private UserService userService;
     private static final Logger logger = LoggerFactory.getLogger(BugController.class);
 
     @PostMapping
