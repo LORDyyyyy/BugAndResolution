@@ -18,12 +18,6 @@ Bug Tracking is a platform designed to help teams track, manage, and resolve sof
 
 ## Installation
 
-### Prerequisites
-
-- Java 11 or higher
-- MySQL 5.7 or higher
-- Node.js 14 or higher
-- Git
 
 ### Setup Instructions
 
