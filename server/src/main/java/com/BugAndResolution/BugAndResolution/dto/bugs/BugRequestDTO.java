@@ -1,10 +1,16 @@
 package com.BugAndResolution.BugAndResolution.dto.bugs;
 
+import jakarta.validation.constraints.NotEmpty;
+
 public class BugRequestDTO {
 
+    @NotEmpty(message = "Title cannot be null or empty")
     private String title;
+    @NotEmpty(message = "Description cannot be null or empty")
     private String description;
+    @NotEmpty(message = "Severity cannot be null or empty")
     private String severity;
+    @NotEmpty(message = "SubmittedById cannot be null or empty")
     private Long submittedById;
     private Long developerId;
 

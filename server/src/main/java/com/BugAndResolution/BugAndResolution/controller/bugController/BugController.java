@@ -49,5 +49,10 @@ public class BugController {
     @GetMapping("filter-by-status/{status}")
     public ResponseEntity<List<BugResponseDTO>> filterByStatus(@PathVariable String status) {
         return ResponseEntity.ok(bugService.getBugsByStatus(status));
+
+    @DeleteMapping("{bugId}")
+    public ResponseEntity<BugResponseDTO>deleteBug(@PathVariable Long bugId){
+        bugService.deleteBug(bugId);
+        return ResponseEntity.noContent().build();
     }
 }

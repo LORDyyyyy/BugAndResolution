@@ -3,6 +3,7 @@ package com.BugAndResolution.BugAndResolution.service.bugServices;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugRequestDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO;
+import com.BugAndResolution.BugAndResolution.exception.ResourceNotFoundException;
 import com.BugAndResolution.BugAndResolution.model.entities.Bug;
 import com.BugAndResolution.BugAndResolution.model.entities.User;
 import com.BugAndResolution.BugAndResolution.model.enums.Status;
@@ -23,13 +24,18 @@ public class BugService {
     private UserRepository userRepository;
 
     public BugResponseDTO submitBug(BugRequestDTO dto) {
-        User submittedBy = userRepository.findById(dto.getSubmittedById())
-                .orElseThrow(() -> new RuntimeException("User not found"));
+        User submittedBy = null;
+        if (dto.getSubmittedById() != null) {
+            submittedBy = userRepository.findById(dto.getSubmittedById())
+                    .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+        }
+
         User developer = null;
         if (dto.getDeveloperId() != null) {
             developer = userRepository.findById(dto.getDeveloperId())
-                    .orElseThrow(() -> new RuntimeException("Developer not found"));
+                    .orElseThrow(() -> new ResourceNotFoundException("Developer not found"));
         }
+
         Bug bug = new Bug(dto.getTitle(), dto.getDescription(), dto.getSeverity(), Status.OPEN);
         bug.setSubmittedBy(submittedBy);
         bug.setDeveloper(developer);
@@ -56,49 +62,36 @@ public class BugService {
 
     public BugResponseDTO getBugById(Long bugId) {
         Bug bug = bugRepository.findById(bugId)
-                .orElseThrow(() -> new RuntimeException("Bug not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Bug not found"));
 
         return mapToBugResponseDTO(bug);
     }
 
 
 
+    public void deleteBug(Long bugId){
+        Bug bug=bugRepository.findById(bugId).orElseThrow(()->new ResourceNotFoundException("Bug not found"));
+        bugRepository.delete(bug);
+    }
+
+
 
 
     public BugResponseDTO updateBug(BugUpdateDTO dto) {
         Bug bug = bugRepository.findById(dto.getBugId())
-                .orElseThrow(() -> new RuntimeException("Bug not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Bug not found"));
 
-        if (dto.getStatus() != null) {
             bug.setStatus(dto.getStatus());
-        }
-        if (dto.getDeveloperId() != null) {
             User dev = userRepository.findById(dto.getDeveloperId())
-                    .orElseThrow(() -> new RuntimeException("Developer not found"));
+                    .orElseThrow(() -> new ResourceNotFoundException("Developer not found"));
             bug.setDeveloper(dev);
-        }
-        if(dto.getSubmittedById()!=null){
             User submitted=userRepository.findById(dto.getSubmittedById())
-                    .orElseThrow(()->new RuntimeException("User not found"));
-
+                    .orElseThrow(()->new ResourceNotFoundException("User not found"));
             bug.setSubmittedBy(submitted);
-        }
-
-        if (dto.getTitle() != null) {
             bug.setTitle(dto.getTitle());
-        }
-
-        if (dto.getDescription() != null) {
             bug.setDescription(dto.getDescription());
-        }
-
-        if(dto.getSeverity()!=null){
             bug.setSeverity(dto.getSeverity());
-        }
-        if (dto.getStatus() != null) {
             bug.setStatus(dto.getStatus());
-        }
-
         Bug updated = bugRepository.save(bug);
         return mapToBugResponseDTO(updated);
     }
