@@ -97,7 +97,25 @@ public class BugService {
     }
 
 
+    public List<BugResponseDTO> getBugsByDeveloperId(Long developerId) {
+        List<Bug> bugs = bugRepository.findAllByDeveloperId(developerId);
+        List<BugResponseDTO> dtos = new ArrayList<>();
+        for (Bug b : bugs) {
+            dtos.add(mapToBugResponseDTO(b));
+        }
+        return dtos;
+    }
 
+
+    public List<BugResponseDTO> getBugsByStatus(String statusStr) {
+        Status status = Status.valueOf(statusStr.toUpperCase());
+        List<Bug> bugs = bugRepository.findAllByStatus(status);
+        List<BugResponseDTO> dtos = new ArrayList<>();
+        for (Bug b : bugs) {
+            dtos.add(mapToBugResponseDTO(b));
+        }
+        return dtos;
+    }
 
 
     private BugResponseDTO mapToBugResponseDTO(Bug bug) {
