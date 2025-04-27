@@ -51,6 +51,11 @@ public class BugController {
         return ResponseEntity.ok(bugService.getBugsByStatus(status));
     }
 
+    @GetMapping("filter-by-severity/{severity}")
+    public ResponseEntity<List<BugResponseDTO>> filterBySeverity(@PathVariable String severity) {
+        return ResponseEntity.ok(bugService.getBugsBySeverity(severity));
+    }
+
     @DeleteMapping("{bugId}")
     public ResponseEntity<BugResponseDTO>deleteBug(@PathVariable Long bugId){
         bugService.deleteBug(bugId);

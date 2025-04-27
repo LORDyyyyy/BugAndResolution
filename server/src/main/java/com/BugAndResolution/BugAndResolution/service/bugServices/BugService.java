@@ -117,6 +117,15 @@ public class BugService {
         return dtos;
     }
 
+    public List<BugResponseDTO> getBugsBySeverity(String severity) {
+        List<Bug> bugs = bugRepository.findAllBySeverity(severity);
+        List<BugResponseDTO> dtos = new ArrayList<>();
+        for (Bug b : bugs) {
+            dtos.add(mapToBugResponseDTO(b));
+        }
+        return dtos;
+    }
+
 
     private BugResponseDTO mapToBugResponseDTO(Bug bug) {
         BugResponseDTO dto = new BugResponseDTO();
