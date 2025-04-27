@@ -34,7 +34,7 @@ spring.application.name=BugAndResolution
 spring.datasource.url=jdbc:mysql://localhost:3306/bug_and_resolution_schema
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-spring.datasource.driver-class-name=org.mysql.jdbc.Driver
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 spring.jpa.hibernate.ddl-auto=update
 ```
