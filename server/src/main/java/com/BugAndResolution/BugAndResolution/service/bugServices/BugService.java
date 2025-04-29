@@ -160,6 +160,10 @@ public class BugService {
         if (!"DEVELOPER".equals(developer.getRole().name())) {
             throw new AccessDeniedException("The selected user is not a developer");
         }
+
+        if (bug.getDeveloper().getId().equals(developerId)) {
+            throw new AccessDeniedException("The bug is already assigned to this developer");
+        }
         
         bug.setDeveloper(developer);
         bug.setStatus(Status.IN_PROG);

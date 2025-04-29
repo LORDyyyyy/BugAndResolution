@@ -3,7 +3,6 @@ package com.BugAndResolution.BugAndResolution.dto.user;
 import com.BugAndResolution.BugAndResolution.model.enums.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Pattern;
 
 public class UserRequestDTO {
     @NotEmpty(message = "Name cannot be null or empty")
