@@ -2,6 +2,7 @@ package com.BugAndResolution.BugAndResolution.service.userServices;
 
 import com.BugAndResolution.BugAndResolution.dto.user.UserRequestDTO;
 import com.BugAndResolution.BugAndResolution.dto.user.UserResponseDTO;
+import com.BugAndResolution.BugAndResolution.exception.ResourceNotFoundException;
 import com.BugAndResolution.BugAndResolution.model.entities.User;
 import com.BugAndResolution.BugAndResolution.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class UserService {
 
     public UserResponseDTO updateUser(Long id, UserRequestDTO dto) {
         User user = userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
 
         user.setName(dto.getName());
         user.setEmail(dto.getEmail());
@@ -44,13 +45,13 @@ public class UserService {
 
     public UserResponseDTO getUserById(Long id) {
         User user = userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
         return mapToUserResponseDTO(user);
     }
 
     public void deleteUser(Long id) {
         User user = userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
         userRepository.delete(user);
     }
 
