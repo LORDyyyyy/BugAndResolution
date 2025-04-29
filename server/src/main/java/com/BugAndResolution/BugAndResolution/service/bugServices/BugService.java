@@ -3,6 +3,7 @@ package com.BugAndResolution.BugAndResolution.service.bugServices;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugRequestDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO;
+import com.BugAndResolution.BugAndResolution.exception.AccessDeniedException;
 import com.BugAndResolution.BugAndResolution.exception.ResourceNotFoundException;
 import com.BugAndResolution.BugAndResolution.model.entities.Bug;
 import com.BugAndResolution.BugAndResolution.model.entities.User;
@@ -10,6 +11,8 @@ import com.BugAndResolution.BugAndResolution.model.enums.Status;
 import com.BugAndResolution.BugAndResolution.repository.BugRepository;
 import com.BugAndResolution.BugAndResolution.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -24,12 +27,16 @@ public class BugService {
     private UserRepository userRepository;
 
     public BugResponseDTO submitBug(BugRequestDTO dto) {
-        User submittedBy = null;
-        if (dto.getSubmittedById() != null) {
-            submittedBy = userRepository.findById(dto.getSubmittedById())
-                    .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String email = authentication.getName();
+        
+        User submittedBy = userRepository.findByEmail(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Authenticated user not found"));
+        
+        if (!"TESTER".equals(submittedBy.getRole().name())) {
+            throw new AccessDeniedException("Only testers can submit bugs");
         }
-
+        
         User developer = null;
         if (dto.getDeveloperId() != null) {
             developer = userRepository.findById(dto.getDeveloperId())
@@ -70,6 +77,18 @@ public class BugService {
 
 
     public void deleteBug(Long bugId){
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String email = authentication.getName();
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Authenticated user not found"));
+        
+        if (!"TESTER".equals(user.getRole().name())) {
+            throw new AccessDeniedException("Only testers can delete bugs");
+        }
+        if (bugRepository.findById(bugId).isEmpty()) {
+            throw new ResourceNotFoundException("Bug not found");
+        }
         Bug bug=bugRepository.findById(bugId).orElseThrow(()->new ResourceNotFoundException("Bug not found"));
         bugRepository.delete(bug);
     }
@@ -79,23 +98,28 @@ public class BugService {
 
     public BugResponseDTO updateBug(BugUpdateDTO dto) {
         Bug bug = bugRepository.findById(dto.getBugId())
-                .orElseThrow(() -> new ResourceNotFoundException("Bug not found"));
+        .orElseThrow(() -> new ResourceNotFoundException("Bug not found"));
 
-            bug.setStatus(dto.getStatus());
-            User dev = userRepository.findById(dto.getDeveloperId())
-                    .orElseThrow(() -> new ResourceNotFoundException("Developer not found"));
-            bug.setDeveloper(dev);
-            User submitted=userRepository.findById(dto.getSubmittedById())
-                    .orElseThrow(()->new ResourceNotFoundException("User not found"));
-            bug.setSubmittedBy(submitted);
+        if (dto.getTitle() != null) {
             bug.setTitle(dto.getTitle());
+        }
+        if (dto.getDescription() != null) {
             bug.setDescription(dto.getDescription());
+        }
+        if (dto.getSeverity() != null) {
             bug.setSeverity(dto.getSeverity());
+        }
+        if (dto.getStatus() != null) {
             bug.setStatus(dto.getStatus());
-        Bug updated = bugRepository.save(bug);
-        return mapToBugResponseDTO(updated);
-    }
+        }
+        if (dto.getDeveloperId() != null) {
+            User developer = userRepository.findById(dto.getDeveloperId())
+                    .orElseThrow(() -> new ResourceNotFoundException("Developer not found"));
+            bug.setDeveloper(developer);
+        }
 
+        return mapToBugResponseDTO(bugRepository.save(bug));
+    }
 
     public List<BugResponseDTO> getBugsByDeveloperId(Long developerId) {
         List<Bug> bugs = bugRepository.findAllByDeveloperId(developerId);
@@ -126,6 +150,23 @@ public class BugService {
         return dtos;
     }
 
+    public BugResponseDTO assignBugToDeveloper(Long bugId, Long developerId) {        
+        Bug bug = bugRepository.findById(bugId)
+                .orElseThrow(() -> new ResourceNotFoundException("Bug not found with id: " + bugId));
+        
+        User developer = userRepository.findById(developerId)
+                .orElseThrow(() -> new ResourceNotFoundException("Developer not found with id: " + developerId));
+        
+        if (!"DEVELOPER".equals(developer.getRole().name())) {
+            throw new AccessDeniedException("The selected user is not a developer");
+        }
+        
+        bug.setDeveloper(developer);
+        bug.setStatus(Status.IN_PROG);
+        bug = bugRepository.save(bug);
+        
+        return mapToBugResponseDTO(bug);
+    }
 
     private BugResponseDTO mapToBugResponseDTO(Bug bug) {
         BugResponseDTO dto = new BugResponseDTO();

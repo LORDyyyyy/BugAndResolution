@@ -55,7 +55,38 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
+
+
+    /**
+     * Handle invalid token exceptions
+     */
+
+    @ExceptionHandler(TokenRefreshException.class)
+    public ResponseEntity<ErrorDetails> handleTokenRefreshException(
+            TokenRefreshException ex, WebRequest request) {
+        
+        ErrorDetails errorDetails = new ErrorDetails(
+                new Date(),
+                ex.getMessage(),
+                request.getDescription(false));
+        
+        return new ResponseEntity<>(errorDetails, HttpStatus.UNAUTHORIZED);
+    }
     
+    /**
+     * Handle access denied exceptions
+     */
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<ErrorDetails> handleAccessDeniedException(
+            AccessDeniedException ex, WebRequest request) {
+        
+        ErrorDetails errorDetails = new ErrorDetails(
+                new Date(),
+                ex.getMessage(),
+                request.getDescription(false));
+        
+        return new ResponseEntity<>(errorDetails, HttpStatus.FORBIDDEN);
+    }
     /**
      * Handle all other exceptions
      */

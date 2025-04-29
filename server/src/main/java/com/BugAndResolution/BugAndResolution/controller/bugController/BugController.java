@@ -3,10 +3,12 @@ package com.BugAndResolution.BugAndResolution.controller.bugController;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugRequestDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO;
 import com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO;
+import com.BugAndResolution.BugAndResolution.dto.user.DeveloperAssignmentDTO;
 import com.BugAndResolution.BugAndResolution.service.bugServices.BugService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,7 +20,8 @@ public class BugController {
     @Autowired
     private BugService bugService;
 
-    @PostMapping
+    @PostMapping("/create")
+    @PreAuthorize("hasRole('TESTER')")
     public ResponseEntity<BugResponseDTO> createBug(@RequestBody @Valid BugRequestDTO dto) {
         BugResponseDTO responseDTO = bugService.submitBug(dto);
         return ResponseEntity.ok(responseDTO);
@@ -35,7 +38,8 @@ public class BugController {
     }
 
     @PutMapping("/{bugId}")
-    public ResponseEntity<BugResponseDTO> updateBug(@PathVariable Long bugId,@RequestBody BugUpdateDTO dto) {
+    @PreAuthorize("hasRole('DEVELOPER') or hasRole('TESTER')")
+    public ResponseEntity<BugResponseDTO> updateBug(@PathVariable Long bugId, @RequestBody BugUpdateDTO dto) {
 
         dto.setBugId(bugId);
         return ResponseEntity.ok(bugService.updateBug(dto));
@@ -57,9 +61,19 @@ public class BugController {
     }
 
     @DeleteMapping("{bugId}")
+    @PreAuthorize("hasRole('TESTER')")
     public ResponseEntity<BugResponseDTO>deleteBug(@PathVariable Long bugId){
         bugService.deleteBug(bugId);
         return ResponseEntity.noContent().build();
+    }
+
+    @PreAuthorize("hasRole('MANAGER')")
+    @PutMapping("/assign/{bugId}")
+    public ResponseEntity<BugResponseDTO> assignBugToDeveloper(
+            @PathVariable Long bugId,
+            @Valid @RequestBody DeveloperAssignmentDTO assignmentDTO) {
+        
+        return ResponseEntity.ok(bugService.assignBugToDeveloper(bugId, assignmentDTO.getDeveloperId()));
     }
 
 }
