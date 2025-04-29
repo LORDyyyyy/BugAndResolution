@@ -10,8 +10,7 @@ public class BugRequestDTO {
     private String description;
     @NotEmpty(message = "Severity cannot be null or empty")
     private String severity;
-    // @NotNull(message = "SubmittedById cannot be null or empty")
-    // private Long submittedById;
+  
     private Long developerId;
 
     public BugRequestDTO() {}
