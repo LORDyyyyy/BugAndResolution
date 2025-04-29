@@ -56,7 +56,7 @@ public class CommentServices {
         if (comment.isPresent()) {
             return convertToDTO(comment.get());
         } else {
-            throw new RuntimeException("Comment not found");
+            throw new ResourceNotFoundException("Comment not found");
         }
     }
 
@@ -65,7 +65,7 @@ public class CommentServices {
         if (comment.isPresent()) {
             commentRepository.delete(comment.get());
         } else {
-            throw new RuntimeException("Comment not found");
+            throw new ResourceNotFoundException("Comment not found");
         }
     }
 
