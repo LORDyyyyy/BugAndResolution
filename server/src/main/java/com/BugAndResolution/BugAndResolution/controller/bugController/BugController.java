@@ -37,6 +37,11 @@ public class BugController {
         return ResponseEntity.ok(bugService.getBugById(id));
     }
 
+    @GetMapping("developer/{developerId}")
+    public ResponseEntity<List<BugResponseDTO>> getBugsByDeveloperId(@PathVariable Long developerId) {
+        return ResponseEntity.ok(bugService.getBugsByDeveloperId(developerId));
+    }
+
     @PutMapping("/{bugId}")
     @PreAuthorize("hasRole('DEVELOPER') or hasRole('TESTER')")
     public ResponseEntity<BugResponseDTO> updateBug(@PathVariable Long bugId, @RequestBody BugUpdateDTO dto) {

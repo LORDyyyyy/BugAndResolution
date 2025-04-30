@@ -1,6 +1,7 @@
 package com.BugAndResolution.BugAndResolution.model.entities;
 
 
+import com.BugAndResolution.BugAndResolution.converter.EncryptionConverter;
 import com.BugAndResolution.BugAndResolution.model.enums.Role;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
@@ -18,6 +19,7 @@ public class User {
     private String name;
 
     @Column(name="email", unique = true)
+    @Convert(converter = EncryptionConverter.class)
     private String email;
 
     @Column(name="password")

@@ -5,6 +5,7 @@ import com.BugAndResolution.BugAndResolution.dto.user.UserResponseDTO;
 import com.BugAndResolution.BugAndResolution.service.userServices.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +18,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
+    @PreAuthorize("hasRole('MANAGER')")
     public ResponseEntity<UserResponseDTO> createUser(@RequestBody UserRequestDTO dto) {
         return ResponseEntity.ok(userService.createUser(dto));
     }
