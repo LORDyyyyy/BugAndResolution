@@ -53,12 +53,12 @@ public class AuthService {
     public AuthenticatorResponse authenticate(AuthenticatorRequest request) {
         authenticationManager.authenticate(
             new UsernamePasswordAuthenticationToken(
-                request.getUsername(),
+                request.getEmail(),
                 request.getPassword()
             )
         );
         
-        var user = userRepo.findByEmail(request.getUsername())
+        var user = userRepo.findByEmail(request.getEmail())
             .orElseThrow(() -> new UsernameNotFoundException("User not found"));
             
         return createAuthenticationResponse(user);
