@@ -1,0 +1,655 @@
+2025-05-03T00:19:27.585+03:00  WARN 1026821 --- [BugAndResolution] [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : Request method 'GET' is not supported
+2025-05-03T00:19:27.588+03:00  WARN 1026821 --- [BugAndResolution] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-05-03T00:19:46.203+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:19:46.204+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:19:46.204+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat@example.com, password=Momedhat@10)
+2025-05-03T00:19:46.331+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:19:46.331+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T00:19:46.331+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : medhat@example.com
+2025-05-03T00:19:46.350+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:19:46.350+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T00:19:46.350+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=ac41eb98-9cd0-424e-b7d4-801045bcf9f5, expiryDate=2025-05-09T21:19:46.333089436Z, user=User{id=1, name='MohameMedhat', email='medhat@example.com', password='$2a$10$EETHxbzkP7YKQ.ggH9TgEeJtr3wWar0SgZuROim2JT3rXGrD9fcwW', role=DEVELOPER, createdAt=2025-05-02T23:28:38.175153, bugs=[], comments=[]})
+2025-05-03T00:19:46.359+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 28 ms
+2025-05-03T00:19:46.360+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:19:46.360+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:19:46.360+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtZWRoYXRAZXhhbXBsZS5jb20iLCJpYXQiOjE3NDYyMjA3ODYsImV4cCI6MTc0NjMwNzE4Nn0.tlxiIwDZdZhpIbvwSjrHNM-rx-_DT9GIyVjkcliCvco, refreshToken=ac41eb98-9cd0-424e-b7d4-801045bcf9f5, tokenType=Bearer)
+2025-05-03T00:19:46.360+03:00  INFO 1026821 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 157 ms
+2025-05-03T00:24:10.541+03:00  WARN 1026821 --- [BugAndResolution] [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : Request method 'GET' is not supported
+2025-05-03T00:24:10.542+03:00  WARN 1026821 --- [BugAndResolution] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-05-03T00:39:48.944+03:00  INFO 1026821 --- [BugAndResolution] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-03T00:39:48.946+03:00  INFO 1026821 --- [BugAndResolution] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T00:39:48.948+03:00  INFO 1026821 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T00:39:48.950+03:00  INFO 1026821 --- [BugAndResolution] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:39:48.953+03:00  INFO 1026821 --- [BugAndResolution] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T00:39:48.955+03:00  INFO 1026821 --- [BugAndResolution] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T00:39:49.016+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1026821 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:39:49.016+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:39:49.016+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:39:49.102+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+2025-05-03T00:39:49.105+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-03T00:39:49.117+03:00 ERROR 1026821 --- [BugAndResolution] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:145) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:121) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.BugAndResolution.BugAndResolution.BugAndResolutionApplication.main(BugAndResolutionApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.BugAndResolution.BugAndResolution.config.ApplicationConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@490dd223]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:751) ~[spring-beans-6.2.5.jar:6.2.5]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:750) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:683) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:654) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1704) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:618) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:590) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanDefinitionsForType(OnBeanCondition.java:332) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanDefinitionsForType(OnBeanCondition.java:324) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanDefinitionsForType(OnBeanCondition.java:314) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:213) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.evaluateConditionalOnMissingBean(OnBeanCondition.java:196) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:143) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.4.4.jar:3.4.4]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: CorsConfigurationSource
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.5.jar:6.2.5]
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: CorsConfigurationSource
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.4.jar:3.4.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 41 common frames omitted
+
+2025-05-03T00:39:59.566+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1026821 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:39:59.567+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:39:59.568+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:39:59.775+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:39:59.811+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:40:00.058+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:40:00.059+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:40:00.059+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:40:00.072+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:40:00.072+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 501 ms
+2025-05-03T00:40:00.166+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:40:00.169+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:40:00.177+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:40:00.179+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-03T00:40:00.195+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53009bd5
+2025-05-03T00:40:00.195+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-03T00:40:00.196+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:40:00.197+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:40:00.198+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:40:00.316+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:40:00.641+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:00.825+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:40:00.864+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:40:00.865+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:40:01.028+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:40:01.358+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T00:40:01.364+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T00:40:01.366+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 1.832 seconds (process running for 5922.384)
+2025-05-03T00:40:01.368+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-03T00:40:07.764+03:00  INFO 1026821 --- [BugAndResolution] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-03T00:40:07.765+03:00  INFO 1026821 --- [BugAndResolution] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T00:40:07.766+03:00  INFO 1026821 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T00:40:07.770+03:00  INFO 1026821 --- [BugAndResolution] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:07.771+03:00  INFO 1026821 --- [BugAndResolution] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-03T00:40:07.773+03:00  INFO 1026821 --- [BugAndResolution] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-03T00:40:07.877+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1026821 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:40:07.877+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:40:07.877+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:40:08.001+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:40:08.013+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:40:08.143+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:40:08.143+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:40:08.144+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:40:08.153+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:40:08.153+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 274 ms
+2025-05-03T00:40:08.227+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:40:08.229+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:40:08.236+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:40:08.237+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-05-03T00:40:08.256+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1568bf91
+2025-05-03T00:40:08.256+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-05-03T00:40:08.257+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:40:08.257+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:40:08.257+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:40:08.362+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:40:08.701+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:08.859+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:40:08.887+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:40:08.887+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:40:09.094+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:40:09.549+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T00:40:09.555+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T00:40:09.558+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 1.706 seconds (process running for 5930.575)
+2025-05-03T00:40:09.559+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-03T00:40:10.950+03:00  INFO 1026821 --- [BugAndResolution] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-03T00:40:10.951+03:00  INFO 1026821 --- [BugAndResolution] [Thread-14] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T00:40:10.951+03:00  INFO 1026821 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T00:40:10.952+03:00  INFO 1026821 --- [BugAndResolution] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:10.953+03:00  INFO 1026821 --- [BugAndResolution] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-05-03T00:40:10.955+03:00  INFO 1026821 --- [BugAndResolution] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-05-03T00:40:11.006+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1026821 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:40:11.006+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:40:11.006+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:40:11.094+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:40:11.102+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:40:11.196+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:40:11.197+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:40:11.197+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:40:11.203+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:40:11.203+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2025-05-03T00:40:11.252+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:40:11.254+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:40:11.259+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:40:11.260+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-05-03T00:40:11.272+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25c8dbb4
+2025-05-03T00:40:11.272+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-05-03T00:40:11.273+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:40:11.274+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:40:11.274+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:40:11.346+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:40:11.659+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:11.770+03:00 DEBUG 1026821 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:40:11.777+03:00  WARN 1026821 --- [BugAndResolution] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig' defined in file [/home/lordy/Github/Collage/BugAndResolution/server/target/classes/com/BugAndResolution/BugAndResolution/config/SecurityConfig.class]: Failed to instantiate [com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+2025-05-03T00:40:11.777+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:11.777+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-05-03T00:40:11.780+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-05-03T00:40:11.780+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-03T00:40:11.783+03:00  INFO 1026821 --- [BugAndResolution] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-03T00:40:11.784+03:00 ERROR 1026821 --- [BugAndResolution] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig' defined in file [/home/lordy/Github/Collage/BugAndResolution/server/target/classes/com/BugAndResolution/BugAndResolution/config/SecurityConfig.class]: Failed to instantiate [com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.BugAndResolution.BugAndResolution.BugAndResolutionApplication.main(BugAndResolutionApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:145) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method corsConfigurationSource() is undefined for the type SecurityConfig
+
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig.<init>(SecurityConfig.java:38) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$0.<init>(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 26 common frames omitted
+
+2025-05-03T00:40:16.027+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1267164 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:40:16.028+03:00 DEBUG 1267164 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:40:16.029+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:40:16.066+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T00:40:16.066+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T00:40:16.066+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T00:40:16.729+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:40:16.786+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:40:17.451+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:40:17.464+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:40:17.464+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:40:17.492+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:40:17.492+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1425 ms
+2025-05-03T00:40:17.665+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:40:17.694+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T00:40:17.716+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:40:17.871+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:40:17.894+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T00:40:18.195+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b7e024
+2025-05-03T00:40:18.197+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T00:40:18.414+03:00  WARN 1267164 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:40:18.426+03:00  WARN 1267164 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:40:18.438+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:40:19.128+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:40:19.449+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:19.835+03:00 DEBUG 1267164 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:40:19.910+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:40:19.910+03:00  WARN 1267164 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:40:19.946+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T00:40:20.444+03:00  WARN 1267164 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:40:20.807+03:00  WARN 1267164 --- [BugAndResolution] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/BugAndResolution/BugAndResolution/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Unimplemented method 'corsConfigurationSource'
+2025-05-03T00:40:20.808+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:40:20.811+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T00:40:20.816+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T00:40:20.818+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-03T00:40:20.828+03:00  INFO 1267164 --- [BugAndResolution] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-03T00:40:20.842+03:00 ERROR 1267164 --- [BugAndResolution] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/BugAndResolution/BugAndResolution/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Unimplemented method 'corsConfigurationSource'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:896) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:849) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.4.jar:3.4.4]
+	at com.BugAndResolution.BugAndResolution.BugAndResolutionApplication.main(BugAndResolutionApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/BugAndResolution/BugAndResolution/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Unimplemented method 'corsConfigurationSource'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1919) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1883) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1773) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1741) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1616) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:888) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Unimplemented method 'corsConfigurationSource'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 42 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'corsConfigurationSource'
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig.corsConfigurationSource(SecurityConfig.java:47) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig.lambda$3(SecurityConfig.java:40) ~[classes/:na]
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.cors(HttpSecurity.java:464) ~[spring-security-config-6.4.4.jar:6.4.4]
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig.securityFilterChain(SecurityConfig.java:40) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$0(<generated>) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:370) ~[spring-context-6.2.5.jar:6.2.5]
+	at com.BugAndResolution.BugAndResolution.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 45 common frames omitted
+
+2025-05-03T00:42:28.756+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1272466 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:42:28.758+03:00 DEBUG 1272466 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:42:28.759+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:42:28.793+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T00:42:28.794+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T00:42:28.794+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T00:42:29.430+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:42:29.511+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:42:30.197+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:42:30.208+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:42:30.209+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:42:30.252+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:42:30.253+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
+2025-05-03T00:42:30.433+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:42:30.471+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T00:42:30.498+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:42:30.664+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:42:30.682+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T00:42:30.921+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@336763a2
+2025-05-03T00:42:30.923+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T00:42:31.117+03:00  WARN 1272466 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:42:31.131+03:00  WARN 1272466 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:42:31.140+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:42:31.766+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:42:32.100+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:42:32.558+03:00 DEBUG 1272466 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:42:32.625+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:42:32.626+03:00  WARN 1272466 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:42:32.655+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T00:42:33.145+03:00  WARN 1272466 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:42:33.918+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T00:42:33.943+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T00:42:33.953+03:00  INFO 1272466 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 5.562 seconds (process running for 5.826)
+2025-05-03T00:42:43.926+03:00  INFO 1272466 --- [BugAndResolution] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T00:42:43.929+03:00  INFO 1272466 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T00:42:43.939+03:00  INFO 1272466 --- [BugAndResolution] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:42:43.942+03:00  INFO 1272466 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T00:42:43.953+03:00  INFO 1272466 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T00:42:45.007+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1273268 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:42:45.008+03:00 DEBUG 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:42:45.009+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:42:45.043+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T00:42:45.043+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T00:42:45.044+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T00:42:45.588+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:42:45.650+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:42:46.393+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:42:46.403+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:42:46.404+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:42:46.436+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:42:46.437+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
+2025-05-03T00:42:46.614+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:42:46.644+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T00:42:46.666+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:42:46.826+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:42:46.846+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T00:42:47.098+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60ac8a90
+2025-05-03T00:42:47.099+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T00:42:47.300+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:42:47.309+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:42:47.319+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:42:47.968+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:42:48.303+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:42:48.723+03:00 DEBUG 1273268 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:42:48.792+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:42:48.792+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:42:48.822+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T00:42:49.275+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:42:50.018+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T00:42:50.041+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T00:42:50.048+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 5.36 seconds (process running for 5.652)
+2025-05-03T00:44:12.935+03:00  INFO 1273268 --- [BugAndResolution] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03T00:44:12.935+03:00  INFO 1273268 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03T00:44:12.937+03:00  INFO 1273268 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-03T00:44:13.877+03:00  INFO 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:44:13.878+03:00  INFO 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:44:13.878+03:00  INFO 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat@example.com, password=Momedhat@10)
+2025-05-03T00:44:14.016+03:00 ERROR 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:44:14.016+03:00 ERROR 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:44:14.016+03:00 ERROR 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Exception: User not found
+2025-05-03T00:44:14.041+03:00  WARN 1273268 --- [BugAndResolution] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: User not found]
+2025-05-03T00:48:17.760+03:00  INFO 1273268 --- [BugAndResolution] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-03T00:48:17.764+03:00  INFO 1273268 --- [BugAndResolution] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T00:48:17.766+03:00  INFO 1273268 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T00:48:17.771+03:00  INFO 1273268 --- [BugAndResolution] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:48:17.775+03:00  INFO 1273268 --- [BugAndResolution] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T00:48:17.783+03:00  INFO 1273268 --- [BugAndResolution] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T00:48:17.879+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1273268 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:48:17.879+03:00 DEBUG 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:48:17.879+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:48:18.066+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:48:18.083+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:48:18.300+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:48:18.301+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:48:18.302+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:48:18.311+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:48:18.311+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 430 ms
+2025-05-03T00:48:18.398+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:48:18.400+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:48:18.409+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:48:18.410+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-03T00:48:18.433+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6761d13d
+2025-05-03T00:48:18.434+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-03T00:48:18.435+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:48:18.436+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:48:18.437+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:48:18.594+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:48:18.844+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:48:19.006+03:00 DEBUG 1273268 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:48:19.035+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:48:19.036+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:48:19.196+03:00  WARN 1273268 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:48:19.559+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T00:48:19.568+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T00:48:19.571+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 1.723 seconds (process running for 335.175)
+2025-05-03T00:48:19.573+03:00  INFO 1273268 --- [BugAndResolution] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-03T00:48:35.632+03:00  INFO 1273268 --- [BugAndResolution] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T00:48:35.633+03:00  INFO 1273268 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T00:48:35.636+03:00  INFO 1273268 --- [BugAndResolution] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:48:35.636+03:00  INFO 1273268 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-03T00:48:35.639+03:00  INFO 1273268 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-03T00:48:41.448+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.7 with PID 1287171 (/home/lordy/Github/Collage/BugAndResolution/server/target/classes started by lordy in /home/lordy/Github/Collage/BugAndResolution/server)
+2025-05-03T00:48:41.450+03:00 DEBUG 1287171 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T00:48:41.451+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T00:48:41.492+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/lordy/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T00:48:41.492+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T00:48:41.492+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T00:48:42.035+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T00:48:42.088+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2025-05-03T00:48:42.767+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T00:48:42.777+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T00:48:42.778+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T00:48:42.805+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T00:48:42.805+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1312 ms
+2025-05-03T00:48:42.981+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T00:48:43.010+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T00:48:43.031+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T00:48:43.200+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T00:48:43.219+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T00:48:43.454+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47ff029
+2025-05-03T00:48:43.456+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T00:48:43.650+03:00  WARN 1287171 --- [BugAndResolution] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000339: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2025-05-03T00:48:43.659+03:00  WARN 1287171 --- [BugAndResolution] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03T00:48:43.666+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T00:48:44.262+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T00:48:44.396+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T00:48:44.772+03:00 DEBUG 1287171 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T00:48:44.831+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T00:48:44.831+03:00  WARN 1287171 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T00:48:44.861+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T00:48:45.337+03:00  WARN 1287171 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T00:48:46.006+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T00:48:46.027+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T00:48:46.036+03:00  INFO 1287171 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 4.918 seconds (process running for 5.17)
+2025-05-03T00:50:36.063+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03T00:50:36.064+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03T00:50:36.066+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-03T00:50:36.149+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:50:36.150+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T00:50:36.150+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=MohameMedhat, password=Momedhat@10, email=medhat10@example.com, role=TESTER)
+2025-05-03T00:50:36.341+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:50:36.341+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T00:50:36.341+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : medhat10@example.com
+2025-05-03T00:50:36.360+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:50:36.360+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T00:50:36.360+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=42822177-8a27-4a1f-a006-9cf57c447f01, expiryDate=2025-05-09T21:50:36.344377766Z, user=User{id=1, name='MohameMedhat', email='medhat10@example.com', password='$2a$10$O61j8VaxHQIuTL2LJFZehuRIMVYqEAZoRPXtx0RhaUF/o9HoALIiu', role=TESTER, createdAt=2025-05-03T00:50:36.286703685, bugs=null, comments=null})
+2025-05-03T00:50:36.362+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 21 ms
+2025-05-03T00:50:36.362+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:50:36.362+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T00:50:36.362+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX1RFU1RFUiJdLCJzdWIiOiJtZWRoYXQxMEBleGFtcGxlLmNvbSIsImlhdCI6MTc0NjIyMjYzNiwiZXhwIjoxNzQ2MzA5MDM2fQ.lpj9RBntJBni29NFEZYZrIcQZrQ6pANUICAlFdCDMqc, refreshToken=42822177-8a27-4a1f-a006-9cf57c447f01, tokenType=Bearer)
+2025-05-03T00:50:36.363+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest) executed in 214 ms
+2025-05-03T00:51:34.084+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:51:34.084+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:51:34.085+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat@example.com, password=Momedhat@10)
+2025-05-03T00:51:34.174+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:51:34.175+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:51:34.175+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Exception: User not found
+2025-05-03T00:51:34.181+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: User not found]
+2025-05-03T00:52:11.717+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:52:11.717+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:52:11.717+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat@example.com, password=Momedhat@10)
+2025-05-03T00:52:11.720+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:52:11.720+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:52:11.720+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.B.aop.ExceptionAspect                : Exception: User not found
+2025-05-03T00:52:11.722+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: User not found]
+2025-05-03T00:52:35.795+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:52:35.796+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T00:52:35.796+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=MohameMedhat, password=Momedhat@10, email=medhat10@example.com, role=TESTER)
+2025-05-03T00:52:35.805+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:52:35.806+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T00:52:35.806+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.B.aop.ExceptionAspect                : Exception: Email already exists
+2025-05-03T00:52:35.807+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Email already exists]
+2025-05-03T00:52:47.079+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:52:47.079+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:52:47.079+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat@example.com, password=Momedhat@10)
+2025-05-03T00:52:47.081+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:52:47.081+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:52:47.081+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Exception: User not found
+2025-05-03T00:52:47.082+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: User not found]
+2025-05-03T00:53:09.354+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:53:09.354+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T00:53:09.354+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=MohameMedhat, password=Momedhat@10, email=medhat10@example.com, role=TESTER)
+2025-05-03T00:53:09.357+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:53:09.358+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T00:53:09.358+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Exception: Email already exists
+2025-05-03T00:53:09.359+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Email already exists]
+2025-05-03T00:54:51.045+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:54:51.046+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:54:51.046+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat10@example.com, password=Momedhat@10)
+2025-05-03T00:54:51.138+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:54:51.138+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T00:54:51.139+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : medhat10@example.com
+2025-05-03T00:54:51.159+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:54:51.159+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T00:54:51.159+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=040ad55b-af23-4c18-9662-5d76cdc1b984, expiryDate=2025-05-09T21:54:51.141343761Z, user=User{id=1, name='MohameMedhat', email='medhat10@example.com', password='$2a$10$O61j8VaxHQIuTL2LJFZehuRIMVYqEAZoRPXtx0RhaUF/o9HoALIiu', role=TESTER, createdAt=2025-05-03T00:50:36.286704, bugs=[], comments=[]})
+2025-05-03T00:54:51.167+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 29 ms
+2025-05-03T00:54:51.167+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:54:51.167+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:54:51.167+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX1RFU1RFUiJdLCJzdWIiOiJtZWRoYXQxMEBleGFtcGxlLmNvbSIsImlhdCI6MTc0NjIyMjg5MSwiZXhwIjoxNzQ2MzA5MjkxfQ.2OOjObAoE6-fvVklRY3OoD367Tt7IVOg4dAc9GPyWzY, refreshToken=040ad55b-af23-4c18-9662-5d76cdc1b984, tokenType=Bearer)
+2025-05-03T00:54:51.167+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 122 ms
+2025-05-03T00:58:29.735+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:58:29.735+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.refreshToken(TokenRefreshRequest)
+2025-05-03T00:58:29.735+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : TokenRefreshRequest(refreshToken=null)
+2025-05-03T00:58:29.735+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:58:29.736+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: Optional com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.findByToken(String)
+2025-05-03T00:58:29.736+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : null
+2025-05-03T00:58:29.740+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:58:29.740+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: Optional com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.findByToken(String)
+2025-05-03T00:58:29.741+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: Optional.empty
+2025-05-03T00:58:29.741+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Method Optional com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.findByToken(String) executed in 6 ms
+2025-05-03T00:58:29.742+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:58:29.742+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.refreshToken(TokenRefreshRequest)
+2025-05-03T00:58:29.742+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.B.aop.ExceptionAspect                : Exception: Refresh token is not in database!
+2025-05-03T00:58:29.744+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.BugAndResolution.BugAndResolution.exception.TokenRefreshException: Refresh token is not in database!]
+2025-05-03T00:58:30.294+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:58:30.294+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.refreshToken(TokenRefreshRequest)
+2025-05-03T00:58:30.294+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : TokenRefreshRequest(refreshToken=null)
+2025-05-03T00:58:30.294+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:58:30.294+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: Optional com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.findByToken(String)
+2025-05-03T00:58:30.294+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : null
+2025-05-03T00:58:30.297+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T00:58:30.297+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: Optional com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.findByToken(String)
+2025-05-03T00:58:30.297+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: Optional.empty
+2025-05-03T00:58:30.297+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Method Optional com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.findByToken(String) executed in 3 ms
+2025-05-03T00:58:30.297+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:58:30.297+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.refreshToken(TokenRefreshRequest)
+2025-05-03T00:58:30.297+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.B.aop.ExceptionAspect                : Exception: Refresh token is not in database!
+2025-05-03T00:58:30.298+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.BugAndResolution.BugAndResolution.exception.TokenRefreshException: Refresh token is not in database!]
+2025-05-03T00:58:48.835+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T00:58:48.836+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:58:48.836+03:00  INFO 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=medhat@example.com, password=Momedhat@10)
+2025-05-03T00:58:48.838+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T00:58:48.839+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T00:58:48.839+03:00 ERROR 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.B.aop.ExceptionAspect                : Exception: User not found
+2025-05-03T00:58:48.840+03:00  WARN 1287171 --- [BugAndResolution] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.InternalAuthenticationServiceException: User not found]
