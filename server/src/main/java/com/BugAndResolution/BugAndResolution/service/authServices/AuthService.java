@@ -93,6 +93,9 @@ public class AuthService {
         RefreshToken refreshToken = refreshTokenService.createRefreshToken(user.getEmail());
         
         return AuthenticatorResponse.builder()
+            .id(user.getId())
+            .userName(user.getName())
+            .email(user.getEmail())
             .accessToken(accessToken)
             .refreshToken(refreshToken.getToken())
             .build();
