@@ -1,5 +1,7 @@
 package com.BugAndResolution.BugAndResolution.controller.authContoller;
 
+import jakarta.servlet.http.HttpServletResponse;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,14 +24,14 @@ public class AuthContoller {
 
     private final AuthService authService;
     @PostMapping("/register")
-    public ResponseEntity<AuthenticatorResponse> register(@RequestBody RegisterRequest request) {
-            return ResponseEntity.ok(authService.register(request));
+    public ResponseEntity<AuthenticatorResponse> register(@RequestBody RegisterRequest request, HttpServletResponse response) {
+            return ResponseEntity.ok(authService.register(request, response));
         
     }
 
     @PostMapping("/authenticate")
-    public ResponseEntity<AuthenticatorResponse> authenticate(@RequestBody AuthenticatorRequest request) {
-        return ResponseEntity.ok(authService.authenticate(request));
+    public ResponseEntity<AuthenticatorResponse> authenticate(@RequestBody AuthenticatorRequest request, HttpServletResponse response) {
+        return ResponseEntity.ok(authService.authenticate(request, response));
     }
 
     @PostMapping("/refresh-token")

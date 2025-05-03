@@ -1,7 +1,10 @@
 package com.BugAndResolution.BugAndResolution.service.authServices;
 
+import org.springframework.http.HttpHeaders;
+import java.time.Duration;
 import java.util.Optional;
 
+import org.springframework.http.ResponseCookie;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -21,7 +24,7 @@ import com.BugAndResolution.BugAndResolution.model.enums.Role;
 import com.BugAndResolution.BugAndResolution.repository.UserRepository;
 import com.BugAndResolution.BugAndResolution.secuirty.UserDetailsImpl;
 
-
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -34,7 +37,7 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
     private final RefreshTokenService refreshTokenService;
 
-    public AuthenticatorResponse register(RegisterRequest request) {
+    public AuthenticatorResponse register(RegisterRequest request, HttpServletResponse response) {
         if (userRepo.findByEmail(request.getEmail()).isPresent()) {
             throw new RuntimeException("Email already exists");
         }
@@ -46,11 +49,11 @@ public class AuthService {
         user.setRole(Role.valueOf(request.getRole()));
         
         userRepo.save(user);
-
-        return createAuthenticationResponse(user);
+        
+        return createAuthenticationResponse(user, response);
     }
 
-    public AuthenticatorResponse authenticate(AuthenticatorRequest request) {
+    public AuthenticatorResponse authenticate(AuthenticatorRequest request, HttpServletResponse response) {
         authenticationManager.authenticate(
             new UsernamePasswordAuthenticationToken(
                 request.getEmail(),
@@ -61,7 +64,7 @@ public class AuthService {
         var user = userRepo.findByEmail(request.getEmail())
             .orElseThrow(() -> new UsernameNotFoundException("User not found"));
             
-        return createAuthenticationResponse(user);
+        return createAuthenticationResponse(user, response);
     }
     
     public AuthenticatorResponse refreshToken(TokenRefreshRequest request) {
@@ -87,11 +90,21 @@ public class AuthService {
             .orElseThrow(() -> new TokenRefreshException("Refresh token is not in database!"));
     }
     
-    private AuthenticatorResponse createAuthenticationResponse(User user) {
+    private AuthenticatorResponse createAuthenticationResponse(User user, HttpServletResponse response) {
         UserDetailsImpl userDetails = new UserDetailsImpl(user);
         String accessToken = jwtService.generateAccessToken(userDetails);
         RefreshToken refreshToken = refreshTokenService.createRefreshToken(user.getEmail());
         
+        ResponseCookie refreshTokenCookie = ResponseCookie.from("refreshToken", refreshToken.getToken())
+        .httpOnly(true)
+        .secure(true)
+        .path("/api/auth/refresh-token")
+        .maxAge(Duration.ofDays(7))
+        .sameSite("None")
+        .build();
+
+        response.setHeader(HttpHeaders.SET_COOKIE, refreshTokenCookie.toString());
+
         return AuthenticatorResponse.builder()
             .id(user.getId())
             .userName(user.getName())

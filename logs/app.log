@@ -1,0 +1,634 @@
+2025-05-03T18:04:10.848+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.6 with PID 33054 (/home/mo5tar/Github/wasfa/server/target/classes started by mo5tar in /home/mo5tar/Github/wasfa)
+2025-05-03T18:04:10.852+03:00 DEBUG 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T18:04:10.854+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T18:04:10.946+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T18:04:10.947+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T18:04:10.947+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T18:04:11.838+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T18:04:11.914+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-05-03T18:04:12.768+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T18:04:12.781+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T18:04:12.782+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T18:04:12.830+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T18:04:12.832+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
+2025-05-03T18:04:13.115+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T18:04:13.167+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T18:04:13.210+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T18:04:13.427+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T18:04:13.451+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T18:04:13.553+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3133be01
+2025-05-03T18:04:13.555+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T18:04:13.618+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.3.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T18:04:14.899+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T18:04:14.957+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:04:15.511+03:00 DEBUG 33054 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T18:04:15.588+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T18:04:15.588+03:00  WARN 33054 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T18:04:15.624+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T18:04:16.180+03:00  WARN 33054 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T18:04:17.112+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T18:04:17.179+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T18:04:17.201+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 7.085 seconds (process running for 7.675)
+2025-05-03T18:04:18.198+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03T18:04:18.198+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03T18:04:18.200+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-03T18:04:18.369+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:04:18.370+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:04:18.371+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mkmkfdfldfdk@gmail.com, password=12343)
+2025-05-03T18:04:18.855+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:04:18.856+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:04:18.857+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mkmkfdfldfdk@gmail.com
+2025-05-03T18:04:18.968+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:04:18.969+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:04:18.969+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=8, token=919da0f2-d2ac-4afb-985b-219f41afbecf, expiryDate=2025-05-10T15:04:18.863598529Z, user=User{id=16, name='mo5t', email='mkmkfdfldfdk@gmail.com', password='$2a$10$fwiNUBEea7Avzv/cfe6G5u.00MOBFPFMU2V40cL2WQF2IvApA/7M2', role=DEVELOPER, createdAt=2025-04-30T22:14:35.570377, bugs=[], comments=[]})
+2025-05-03T18:04:18.989+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 134 ms
+2025-05-03T18:04:18.992+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:04:18.993+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:04:18.993+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=16, userName=mo5t, email=mkmkfdfldfdk@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJta21rZmRmbGRmZGtAZ21haWwuY29tIiwiaWF0IjoxNzQ2Mjg0NjU4LCJleHAiOjE3NDYzNzEwNTh9.5sqX1dLNfA6aKxtYN8rmkeVV-N6JE8EnG2uWndpepGg, refreshToken=919da0f2-d2ac-4afb-985b-219f41afbecf, tokenType=Bearer)
+2025-05-03T18:04:19.005+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 636 ms
+2025-05-03T18:04:32.341+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:04:32.342+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:04:32.342+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO@413270c7
+2025-05-03T18:04:32.380+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:04:32.381+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.B.aop.ExceptionAspect                : Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:04:32.382+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:04:32.401+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:04:43.007+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:04:43.007+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:04:43.007+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO@534c6d9b
+2025-05-03T18:04:43.012+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:04:43.013+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.B.aop.ExceptionAspect                : Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:04:43.013+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:04:43.016+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:04:49.222+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:04:49.223+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:04:49.223+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO@26cb2a2b
+2025-05-03T18:04:49.227+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:04:49.228+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.B.aop.ExceptionAspect                : Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:04:49.228+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:04:49.231+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:05:03.889+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/bugs.]
+2025-05-03T18:05:09.361+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : Request method 'PUT' is not supported
+2025-05-03T18:05:09.364+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2025-05-03T18:05:12.637+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:05:12.637+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs()
+2025-05-03T18:05:12.637+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : No Input Arguments
+2025-05-03T18:05:12.647+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:05:12.647+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.B.aop.ExceptionAspect                : Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs()
+2025-05-03T18:05:12.648+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:05:12.651+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:05:35.693+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-01T18:16:25Z. Current time: 2025-05-03T15:05:35Z, a difference of 161350692 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.BugAndResolution.BugAndResolution.config.jwt.JwtService.extractAllClaims(JwtService.java:81) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.jwt.JwtService.extractClaim(JwtService.java:30) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.jwt.JwtService.extractUsername(JwtService.java:26) ~[classes/:na]
+	at com.BugAndResolution.BugAndResolution.config.jwt.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:40) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2025-05-03T18:05:42.255+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:05:42.256+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getBugsByDeveloperId(Long)
+2025-05-03T18:05:42.256+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : 1
+2025-05-03T18:05:42.263+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:05:42.263+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getBugsByDeveloperId(Long)
+2025-05-03T18:05:42.263+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:05:42.266+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:06:18.752+03:00  INFO 33054 --- [BugAndResolution] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-03T18:06:18.755+03:00  INFO 33054 --- [BugAndResolution] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T18:06:18.758+03:00  INFO 33054 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T18:06:18.763+03:00  INFO 33054 --- [BugAndResolution] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:06:18.767+03:00  INFO 33054 --- [BugAndResolution] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T18:06:18.770+03:00  INFO 33054 --- [BugAndResolution] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T18:06:18.865+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.6 with PID 33054 (/home/mo5tar/Github/wasfa/server/target/classes started by mo5tar in /home/mo5tar/Github/wasfa)
+2025-05-03T18:06:18.865+03:00 DEBUG 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T18:06:18.865+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T18:06:19.058+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T18:06:19.075+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2025-05-03T18:06:19.249+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T18:06:19.251+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T18:06:19.251+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T18:06:19.266+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T18:06:19.267+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 400 ms
+2025-05-03T18:06:19.352+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T18:06:19.354+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T18:06:19.367+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T18:06:19.368+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-03T18:06:19.373+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@43ada68e
+2025-05-03T18:06:19.373+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-03T18:06:19.376+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 11.3.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T18:06:19.574+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T18:06:19.585+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:06:19.767+03:00 DEBUG 33054 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T18:06:19.803+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T18:06:19.804+03:00  WARN 33054 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T18:06:20.000+03:00  WARN 33054 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T18:06:20.429+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T18:06:20.437+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T18:06:20.445+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 1.607 seconds (process running for 130.92)
+2025-05-03T18:06:20.447+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-03T18:06:34.846+03:00  INFO 33054 --- [BugAndResolution] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-03T18:06:34.847+03:00  INFO 33054 --- [BugAndResolution] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T18:06:34.848+03:00  INFO 33054 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T18:06:34.851+03:00  INFO 33054 --- [BugAndResolution] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:06:34.852+03:00  INFO 33054 --- [BugAndResolution] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-03T18:06:34.854+03:00  INFO 33054 --- [BugAndResolution] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-03T18:06:34.942+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.6 with PID 33054 (/home/mo5tar/Github/wasfa/server/target/classes started by mo5tar in /home/mo5tar/Github/wasfa)
+2025-05-03T18:06:34.942+03:00 DEBUG 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T18:06:34.942+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T18:06:35.091+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T18:06:35.103+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2025-05-03T18:06:35.239+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T18:06:35.240+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T18:06:35.240+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T18:06:35.248+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T18:06:35.248+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 304 ms
+2025-05-03T18:06:35.335+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T18:06:35.337+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T18:06:35.347+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T18:06:35.348+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-05-03T18:06:35.350+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@53df205f
+2025-05-03T18:06:35.351+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-05-03T18:06:35.352+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 11.3.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T18:06:35.474+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T18:06:35.482+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:06:35.633+03:00 DEBUG 33054 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T18:06:35.654+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T18:06:35.655+03:00  WARN 33054 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T18:06:35.846+03:00  WARN 33054 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T18:06:36.219+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T18:06:36.227+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T18:06:36.230+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 1.318 seconds (process running for 146.705)
+2025-05-03T18:06:36.232+03:00  INFO 33054 --- [BugAndResolution] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-03T18:06:41.639+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03T18:06:41.639+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03T18:06:41.641+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-03T18:06:41.645+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:06:41.645+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:06:41.645+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mkmkfdfldfdk@gmail.com, password=12343)
+2025-05-03T18:06:41.841+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:06:41.841+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:06:41.841+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mkmkfdfldfdk@gmail.com
+2025-05-03T18:06:41.856+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:06:41.857+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:06:41.857+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=8, token=60f17436-189a-4421-a5b3-28144b340bb0, expiryDate=2025-05-10T15:06:41.844974742Z, user=User{id=16, name='mo5t', email='mkmkfdfldfdk@gmail.com', password='$2a$10$fwiNUBEea7Avzv/cfe6G5u.00MOBFPFMU2V40cL2WQF2IvApA/7M2', role=DEVELOPER, createdAt=2025-04-30T22:14:35.570377, bugs=[], comments=[]})
+2025-05-03T18:06:41.861+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 20 ms
+2025-05-03T18:06:41.862+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:06:41.862+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:06:41.862+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJta21rZmRmbGRmZGtAZ21haWwuY29tIiwiaWF0IjoxNzQ2Mjg0ODAxLCJleHAiOjE3NDYzNzEyMDF9.kykFpzkydoPTHw3Zp9Kdl_Cs-3G-QGt7fkt9kFaNqw8, refreshToken=60f17436-189a-4421-a5b3-28144b340bb0, tokenType=Bearer)
+2025-05-03T18:06:41.863+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 218 ms
+2025-05-03T18:06:51.414+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:06:51.414+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getBugsByDeveloperId(Long)
+2025-05-03T18:06:51.414+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : 1
+2025-05-03T18:06:51.418+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:06:51.419+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.B.aop.ExceptionAspect                : Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getBugsByDeveloperId(Long)
+2025-05-03T18:06:51.419+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:06:51.425+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:07:08.026+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:07:08.026+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs()
+2025-05-03T18:07:08.027+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : No Input Arguments
+2025-05-03T18:07:08.035+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:07:08.035+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.B.aop.ExceptionAspect                : Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs()
+2025-05-03T18:07:08.035+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:07:08.038+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:10:47.823+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/comments.]
+2025-05-03T18:12:12.268+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.BugAndResolution.BugAndResolution.dto.comment.CommentResponseDTO> com.BugAndResolution.BugAndResolution.controller.commentController.CommentController.createComment(com.BugAndResolution.BugAndResolution.dto.comment.CommentRequestDTO) with 3 errors: [Field error in object 'commentRequestDTO' on field 'userId': rejected value [null]; codes [NotNull.commentRequestDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [commentRequestDTO.userId,userId]; arguments []; default message [userId]]; default message [User ID is required]] [Field error in object 'commentRequestDTO' on field 'content': rejected value [null]; codes [NotEmpty.commentRequestDTO.content,NotEmpty.content,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [commentRequestDTO.content,content]; arguments []; default message [content]]; default message [Content cannot be null or empty]] [Field error in object 'commentRequestDTO' on field 'bugId': rejected value [null]; codes [NotNull.commentRequestDTO.bugId,NotNull.bugId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [commentRequestDTO.bugId,bugId]; arguments []; default message [bugId]]; default message [Bug ID is required]] ]
+2025-05-03T18:12:33.414+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Long` from String "User": not a valid `java.lang.Long` value]
+2025-05-03T18:12:49.757+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:12:49.757+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: CommentResponseDTO com.BugAndResolution.BugAndResolution.service.commentServices.CommentServices.createComment(CommentRequestDTO)
+2025-05-03T18:12:49.757+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.comment.CommentRequestDTO@107811d2
+2025-05-03T18:12:49.761+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:12:49.761+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Method: CommentResponseDTO com.BugAndResolution.BugAndResolution.service.commentServices.CommentServices.createComment(CommentRequestDTO)
+2025-05-03T18:12:49.762+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.B.aop.ExceptionAspect                : Exception: Error attempting to apply AttributeConverter
+2025-05-03T18:12:49.763+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter]
+2025-05-03T18:18:35.213+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:18:35.214+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:18:35.214+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=mo5t, password=12343, email=mkmkfdfldfdk@gmail.com, role=DEVELOPER)
+2025-05-03T18:18:35.219+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:18:35.219+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:18:35.219+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Exception: Email already exists
+2025-05-03T18:18:35.221+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Email already exists]
+2025-05-03T18:18:42.323+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:18:42.323+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:18:42.323+03:00  INFO 33054 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=mo5tar, password=12343, email=mkmkfdfldfdk@gmail.com, role=DEVELOPER)
+2025-05-03T18:18:42.327+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:18:42.327+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.B.aop.ExceptionAspect                : Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:18:42.327+03:00 ERROR 33054 --- [BugAndResolution] [http-nio-8080-exec-8] c.B.B.aop.ExceptionAspect                : Exception: Email already exists
+2025-05-03T18:18:42.328+03:00  WARN 33054 --- [BugAndResolution] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Email already exists]
+2025-05-03T18:22:13.627+03:00  INFO 33054 --- [BugAndResolution] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T18:22:13.630+03:00  INFO 33054 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T18:22:13.636+03:00  INFO 33054 --- [BugAndResolution] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:22:13.638+03:00  INFO 33054 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-05-03T18:22:13.643+03:00  INFO 33054 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-05-03T18:26:21.839+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.6 with PID 40555 (/home/mo5tar/Github/wasfa/server/target/classes started by mo5tar in /home/mo5tar/Github/wasfa)
+2025-05-03T18:26:21.841+03:00 DEBUG 40555 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T18:26:21.842+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T18:26:21.916+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T18:26:21.917+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T18:26:21.917+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T18:26:22.624+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T18:26:22.713+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+2025-05-03T18:26:23.634+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T18:26:23.648+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T18:26:23.649+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T18:26:23.705+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T18:26:23.707+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1788 ms
+2025-05-03T18:26:23.968+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T18:26:24.022+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T18:26:24.075+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T18:26:24.357+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T18:26:24.388+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T18:26:24.502+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@8c4201c
+2025-05-03T18:26:24.504+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T18:26:24.565+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.3.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T18:26:25.451+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T18:26:25.615+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:26:26.154+03:00 DEBUG 40555 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T18:26:26.257+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T18:26:26.258+03:00  WARN 40555 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T18:26:26.310+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T18:26:26.975+03:00  WARN 40555 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T18:26:28.159+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T18:26:28.224+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T18:26:28.248+03:00  INFO 40555 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 7.447 seconds (process running for 8.196)
+2025-05-03T18:26:53.857+03:00  INFO 40555 --- [BugAndResolution] [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030x8c0xd9e0xf00x060xad0x9a0xa9D0x8b0xf380x1c0xa6-0x0c'0xe60x9d0xfc0xc6kj0xfc0xf40xe10x890x0d0xe3D0xab0x98 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2025-05-03T18:27:12.925+03:00  INFO 40555 --- [BugAndResolution] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T18:27:12.930+03:00  INFO 40555 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T18:27:12.941+03:00  INFO 40555 --- [BugAndResolution] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:27:12.948+03:00  INFO 40555 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T18:27:12.954+03:00  INFO 40555 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T18:27:17.163+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.6 with PID 41040 (/home/mo5tar/Github/wasfa/server/target/classes started by mo5tar in /home/mo5tar/Github/wasfa)
+2025-05-03T18:27:17.165+03:00 DEBUG 41040 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T18:27:17.166+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T18:27:17.227+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T18:27:17.228+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T18:27:17.228+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T18:27:18.126+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T18:27:18.215+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2025-05-03T18:27:19.209+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T18:27:19.226+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T18:27:19.228+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T18:27:19.301+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T18:27:19.302+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2074 ms
+2025-05-03T18:27:19.585+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T18:27:19.628+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T18:27:19.668+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T18:27:19.906+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T18:27:19.944+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T18:27:20.136+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@48ab16c1
+2025-05-03T18:27:20.138+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T18:27:20.233+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.3.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T18:27:21.071+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T18:27:21.133+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:27:21.713+03:00 DEBUG 41040 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T18:27:21.808+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T18:27:21.809+03:00  WARN 41040 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T18:27:21.854+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T18:27:22.961+03:00  WARN 41040 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T18:27:24.121+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T18:27:24.192+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T18:27:24.207+03:00  INFO 41040 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 7.514 seconds (process running for 8.311)
+2025-05-03T18:27:36.090+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030xcf0xbc0x180xad0xa1\0xa70xfd0x8c0xferk0xf6)0xa0k0xc00x1a0xd10x070xa70x8d:X0xe860xc1R0xf080x80e ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2025-05-03T18:28:23.549+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03T18:28:23.549+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03T18:28:23.551+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-03T18:28:23.692+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:28:23.693+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:28:23.693+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=mo5tar, password=12343, email=mo5t@gmail.com, role=DEVELOPER)
+2025-05-03T18:28:24.019+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:28:24.019+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:28:24.020+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:28:24.038+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:28:24.039+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:28:24.039+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=26fea53c-b87e-456f-a7b2-27bb3dc1a934, expiryDate=2025-05-10T15:28:24.023127656Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727537, bugs=null, comments=null})
+2025-05-03T18:28:24.043+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 24 ms
+2025-05-03T18:28:24.044+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:28:24.044+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:28:24.045+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjEwMywiZXhwIjoxNzQ2MzcyNTAzfQ.-rPgPMfgCLiipa1fbgw9SfRJj-7HVdQZX8DkmNLj71U, refreshToken=26fea53c-b87e-456f-a7b2-27bb3dc1a934, tokenType=Bearer)
+2025-05-03T18:28:24.050+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest) executed in 358 ms
+2025-05-03T18:28:42.188+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:28:42.189+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs()
+2025-05-03T18:28:42.189+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : No Input Arguments
+2025-05-03T18:28:42.203+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:28:42.204+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs()
+2025-05-03T18:28:42.204+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: []
+2025-05-03T18:28:42.204+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Method List com.BugAndResolution.BugAndResolution.service.bugServices.BugService.getAllBugs() executed in 16 ms
+2025-05-03T18:29:10.319+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:29:10.320+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: CommentResponseDTO com.BugAndResolution.BugAndResolution.service.commentServices.CommentServices.createComment(CommentRequestDTO)
+2025-05-03T18:29:10.320+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.comment.CommentRequestDTO@4930035c
+2025-05-03T18:29:10.331+03:00 ERROR 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : ### Exception in Method ###
+2025-05-03T18:29:10.332+03:00 ERROR 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Method: CommentResponseDTO com.BugAndResolution.BugAndResolution.service.commentServices.CommentServices.createComment(CommentRequestDTO)
+2025-05-03T18:29:10.332+03:00 ERROR 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.B.aop.ExceptionAspect                : Exception: Bug not found with id: 2
+2025-05-03T18:29:10.347+03:00  WARN 41040 --- [BugAndResolution] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.BugAndResolution.BugAndResolution.exception.ResourceNotFoundException: Bug not found with id: 2]
+2025-05-03T18:29:33.374+03:00  WARN 41040 --- [BugAndResolution] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-05-03T18:31:44.314+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:31:44.315+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:31:44.315+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : RegisterRequest(id=null, username=mo5tar, password=12343, email=mo5tar@gmail.com, role=TESTER)
+2025-05-03T18:31:44.407+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:31:44.408+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:31:44.408+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5tar@gmail.com
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=2, token=8699d4bd-21f4-4edf-9299-df7fb256a12f, expiryDate=2025-05-10T15:31:44.411337276Z, user=User{id=2, name='mo5tar', email='mo5tar@gmail.com', password='$2a$10$QCmz10BNSakYqxYvfbsgm.SSJDQKbv3J.peHR9KdaiH5qOdjNXfHC', role=TESTER, createdAt=2025-05-03T18:31:44.399434097, bugs=null, comments=null})
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 9 ms
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest)
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=2, userName=mo5tar, email=mo5tar@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX1RFU1RFUiJdLCJzdWIiOiJtbzV0YXJAZ21haWwuY29tIiwiaWF0IjoxNzQ2Mjg2MzA0LCJleHAiOjE3NDYzNzI3MDR9.FUZoUuYIzSEj1lMS9ZlfZEj8vKzGO2vCR4Ci7FMAt14, refreshToken=8699d4bd-21f4-4edf-9299-df7fb256a12f, tokenType=Bearer)
+2025-05-03T18:31:44.416+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-2] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.register(RegisterRequest) executed in 102 ms
+2025-05-03T18:32:33.373+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:32:33.373+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.submitBug(BugRequestDTO)
+2025-05-03T18:32:33.373+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.bugs.BugRequestDTO@7c3bc003
+2025-05-03T18:32:33.385+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:32:33.386+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.submitBug(BugRequestDTO)
+2025-05-03T18:32:33.386+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO@2043c160
+2025-05-03T18:32:33.386+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Method BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.submitBug(BugRequestDTO) executed in 13 ms
+2025-05-03T18:35:05.251+03:00  WARN 41040 --- [BugAndResolution] [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' is not supported
+2025-05-03T18:35:05.266+03:00  WARN 41040 --- [BugAndResolution] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-05-03T18:35:10.995+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:35:10.996+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:35:10.996+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO@20ef6cc1
+2025-05-03T18:35:11.020+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:35:11.022+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:35:11.022+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO@29e098e9
+2025-05-03T18:35:11.022+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Method BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO) executed in 27 ms
+2025-05-03T18:36:39.762+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:36:39.763+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:36:39.763+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:36:39.929+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:36:39.929+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:36:39.929+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:36:39.940+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:36:39.941+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:36:39.941+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=a8d57a08-7c6f-4d42-b483-00a43f65833d, expiryDate=2025-05-10T15:36:39.931502248Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:36:39.946+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 17 ms
+2025-05-03T18:36:39.946+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:36:39.946+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:36:39.946+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjU5OSwiZXhwIjoxNzQ2MzcyOTk5fQ.FBT5rAXxEzErINBoi_Br-kslnnuMRV2XGoZMUSaV5ws, refreshToken=a8d57a08-7c6f-4d42-b483-00a43f65833d, tokenType=Bearer)
+2025-05-03T18:36:39.947+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-9] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 185 ms
+2025-05-03T18:36:53.042+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:36:53.043+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:36:53.043+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : com.BugAndResolution.BugAndResolution.dto.bugs.BugUpdateDTO@2db6d5a7
+2025-05-03T18:36:53.047+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:36:53.048+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO)
+2025-05-03T18:36:53.048+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: com.BugAndResolution.BugAndResolution.dto.bugs.BugResponseDTO@40543458
+2025-05-03T18:36:53.048+03:00  INFO 41040 --- [BugAndResolution] [http-nio-8080-exec-10] c.B.BugAndResolution.aop.LoggingAspect   : Method BugResponseDTO com.BugAndResolution.BugAndResolution.service.bugServices.BugService.updateBug(BugUpdateDTO) executed in 6 ms
+2025-05-03T18:37:18.862+03:00  INFO 41040 --- [BugAndResolution] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T18:37:18.864+03:00  INFO 41040 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T18:37:18.870+03:00  INFO 41040 --- [BugAndResolution] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:37:18.873+03:00  INFO 41040 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T18:37:18.876+03:00  INFO 41040 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-03T18:39:51.074+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Starting BugAndResolutionApplication using Java 21.0.6 with PID 45436 (/home/mo5tar/Github/wasfa/server/target/classes started by mo5tar in /home/mo5tar/Github/wasfa)
+2025-05-03T18:39:51.076+03:00 DEBUG 45436 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03T18:39:51.077+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T18:39:51.121+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/cassandra-all-0.8.1.jar referenced one or more files that do not exist: file:/home/mo5tar/.m2/repository/org/apache/cassandra/cassandra-all/0.8.1/apache-cassandra-thrift-0.8.1.jar
+2025-05-03T18:39:51.122+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-03T18:39:51.122+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-03T18:39:51.764+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03T18:39:51.828+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2025-05-03T18:39:52.656+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-03T18:39:52.674+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-03T18:39:52.675+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03T18:39:52.721+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-03T18:39:52.722+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1598 ms
+2025-05-03T18:39:52.942+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03T18:39:52.984+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03T18:39:53.014+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-03T18:39:53.234+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03T18:39:53.262+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-03T18:39:53.352+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7427da49
+2025-05-03T18:39:53.353+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-03T18:39:53.402+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.3.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03T18:39:54.170+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03T18:39:54.213+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T18:39:54.780+03:00 DEBUG 45436 --- [BugAndResolution] [restartedMain] c.B.B.config.jwt.JwtTokenFilter          : Filter 'jwtTokenFilter' configured for use
+2025-05-03T18:39:54.893+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-03T18:39:54.893+03:00  WARN 45436 --- [BugAndResolution] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-03T18:39:54.947+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03T18:39:55.660+03:00  WARN 45436 --- [BugAndResolution] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03T18:39:56.477+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-03T18:39:56.506+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-03T18:39:56.518+03:00  INFO 45436 --- [BugAndResolution] [restartedMain] c.B.B.BugAndResolutionApplication        : Started BugAndResolutionApplication in 5.869 seconds (process running for 6.216)
+2025-05-03T18:40:00.293+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03T18:40:00.293+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-03T18:40:00.295+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-03T18:40:00.410+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:00.412+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:00.413+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:40:00.774+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:00.774+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:00.774+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:40:00.839+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:00.839+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:00.840+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=8f42e0ba-cadf-4656-b543-fe25c676b907, expiryDate=2025-05-10T15:40:00.777305957Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:40:00.851+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 77 ms
+2025-05-03T18:40:00.852+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:00.852+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:00.853+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjgwMCwiZXhwIjoxNzQ2MzczMjAwfQ.zafH8Pk9jEyn76GodUB5Z3oEct-yfGzrANoqXSalYD8, refreshToken=8f42e0ba-cadf-4656-b543-fe25c676b907, tokenType=Bearer)
+2025-05-03T18:40:00.857+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-1] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 447 ms
+2025-05-03T18:40:02.029+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:02.029+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:02.030+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:40:02.118+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:02.118+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:02.119+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:40:02.129+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:02.130+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:02.130+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=2f3b58e9-34d1-4c47-bb92-938923a650ec, expiryDate=2025-05-10T15:40:02.121030265Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:40:02.132+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 14 ms
+2025-05-03T18:40:02.132+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:02.132+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:02.132+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjgwMiwiZXhwIjoxNzQ2MzczMjAyfQ.jcc2buhso8odtHSuhPZI_8lONyW1mqd2Iht7l5uBYfo, refreshToken=2f3b58e9-34d1-4c47-bb92-938923a650ec, tokenType=Bearer)
+2025-05-03T18:40:02.132+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-3] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 103 ms
+2025-05-03T18:40:03.169+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:03.169+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:03.169+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:40:03.256+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:03.257+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:03.257+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:40:03.268+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:03.268+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:03.269+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=7c5468b6-efac-4872-8b77-c87f281c1ebc, expiryDate=2025-05-10T15:40:03.259795619Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:40:03.271+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 15 ms
+2025-05-03T18:40:03.271+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:03.271+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:03.271+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjgwMywiZXhwIjoxNzQ2MzczMjAzfQ.MP7kJ4gZckiIiFTPka-RLg_qWrf2gKxRjruYNLjoDsE, refreshToken=7c5468b6-efac-4872-8b77-c87f281c1ebc, tokenType=Bearer)
+2025-05-03T18:40:03.271+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-4] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 102 ms
+2025-05-03T18:40:05.038+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:05.038+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:05.038+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:40:05.129+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:05.130+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:05.130+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:40:05.144+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:05.145+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:05.145+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=4ca3d280-f7a2-4986-9c10-a6024a3840e4, expiryDate=2025-05-10T15:40:05.134692977Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:40:05.149+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 20 ms
+2025-05-03T18:40:05.150+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:05.150+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:05.154+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjgwNSwiZXhwIjoxNzQ2MzczMjA1fQ.TC8PLCxKd4E1MKsBnwtjrBECpEaKCGaeIPFeVTgZ86I, refreshToken=4ca3d280-f7a2-4986-9c10-a6024a3840e4, tokenType=Bearer)
+2025-05-03T18:40:05.155+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-5] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 117 ms
+2025-05-03T18:40:06.145+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:06.145+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:06.145+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:40:06.232+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:06.232+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:06.232+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:40:06.244+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:06.244+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:06.244+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=42e10f1c-f19c-4076-bcd0-69f3f008300c, expiryDate=2025-05-10T15:40:06.235340908Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:40:06.246+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 14 ms
+2025-05-03T18:40:06.246+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:06.246+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:06.246+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjgwNiwiZXhwIjoxNzQ2MzczMjA2fQ.TOYxkyBf8U88nD6sl3w_4rM3C9TOR9p6XLs9-IUiFZA, refreshToken=42e10f1c-f19c-4076-bcd0-69f3f008300c, tokenType=Bearer)
+2025-05-03T18:40:06.246+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-6] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 101 ms
+2025-05-03T18:40:08.595+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:08.596+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:08.596+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : AuthenticatorRequest(email=mo5t@gmail.com, password=12343)
+2025-05-03T18:40:08.682+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Before The Method Execution
+2025-05-03T18:40:08.682+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Execution Method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:08.682+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Input Argument : mo5t@gmail.com
+2025-05-03T18:40:08.693+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:08.694+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String)
+2025-05-03T18:40:08.694+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: RefreshToken(id=1, token=21652375-49be-4df3-926c-d18f3c10b901, expiryDate=2025-05-10T15:40:08.684704955Z, user=User{id=1, name='mo5tar', email='mo5t@gmail.com', password='$2a$10$O4hYiJpixl62bFcnHh4pguXy26sQLow6z1j5t3rtdDs/r/qMj96nq', role=DEVELOPER, createdAt=2025-05-03T18:28:23.943727, bugs=[], comments=[]})
+2025-05-03T18:40:08.695+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Method RefreshToken com.BugAndResolution.BugAndResolution.service.authServices.RefreshTokenService.createRefreshToken(String) executed in 13 ms
+2025-05-03T18:40:08.695+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : ### After Method Execution ###
+2025-05-03T18:40:08.695+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Executed method: AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest)
+2025-05-03T18:40:08.695+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Returned value: AuthenticatorResponse(id=1, userName=mo5tar, email=mo5t@gmail.com, accessToken=eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiJdLCJzdWIiOiJtbzV0QGdtYWlsLmNvbSIsImlhdCI6MTc0NjI4NjgwOCwiZXhwIjoxNzQ2MzczMjA4fQ.K5Osj1_q9c8J0Z-rQrSDU_RwjFFvTgPWmoN3bqr1l88, refreshToken=21652375-49be-4df3-926c-d18f3c10b901, tokenType=Bearer)
+2025-05-03T18:40:08.695+03:00  INFO 45436 --- [BugAndResolution] [http-nio-8080-exec-7] c.B.BugAndResolution.aop.LoggingAspect   : Method AuthenticatorResponse com.BugAndResolution.BugAndResolution.service.authServices.AuthService.authenticate(AuthenticatorRequest) executed in 100 ms
+2025-05-03T19:10:05.334+03:00  INFO 45436 --- [BugAndResolution] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03T19:10:05.336+03:00  INFO 45436 --- [BugAndResolution] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-03T19:10:05.341+03:00  INFO 45436 --- [BugAndResolution] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03T19:10:05.344+03:00  INFO 45436 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-03T19:10:05.345+03:00  INFO 45436 --- [BugAndResolution] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
