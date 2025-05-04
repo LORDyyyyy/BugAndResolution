@@ -25,7 +25,7 @@ public class Bug {
     @JoinColumn(name = "developer_id")
     private User developer;
 
-    @OneToMany(mappedBy = "bug",cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+    @OneToMany(mappedBy = "bug", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Comment> comments;
 
     @Enumerated(EnumType.STRING)

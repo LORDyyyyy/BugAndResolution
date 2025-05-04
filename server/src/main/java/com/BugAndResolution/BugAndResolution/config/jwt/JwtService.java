@@ -10,6 +10,8 @@ import java.util.function.Function;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
+import com.BugAndResolution.BugAndResolution.secuirty.UserDetailsImpl;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -37,7 +39,11 @@ public class JwtService {
         claims.put("roles", userDetails.getAuthorities().stream()
                 .map(authority -> authority.getAuthority())
                 .toList());
-                
+
+        UserDetailsImpl userDetailsImpl = (UserDetailsImpl) userDetails;
+        claims.put("userId", userDetailsImpl.getUser().getId());
+        claims.put("name", userDetailsImpl.getUser().getName());
+             
         return generateToken(claims, userDetails, ACCESS_TOKEN_VALIDITY);
     }
 
