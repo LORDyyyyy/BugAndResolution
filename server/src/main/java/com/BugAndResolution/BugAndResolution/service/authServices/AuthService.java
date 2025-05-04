@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.http.ResponseCookie;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -114,13 +115,23 @@ public class AuthService {
                 .build();
     }
 
-    public void logout(LogoutRequest request) {
+    public void logout(LogoutRequest request, HttpServletResponse response) {
         String refreshToken = request.getRefreshToken();
 
         Optional<RefreshToken> tokenOptional = refreshTokenService.findByToken(refreshToken);
         if (tokenOptional.isPresent()) {
             RefreshToken token = tokenOptional.get();
             refreshTokenService.deleteByUserId(token.getUser().getId());
+            SecurityContextHolder.clearContext();
+                                            ResponseCookie deleteCookie = ResponseCookie.from("refreshToken", "")
+                                                    .httpOnly(true)
+                                                    .secure(true)
+                                                    .path("/api/auth/refresh-token")
+                                                    .maxAge(0)
+                                                    .sameSite("None")
+                                                    .build();
+
+                                            response.setHeader(HttpHeaders.SET_COOKIE, deleteCookie.toString());
         } else {
             throw new TokenRefreshException("Invalid refresh token");
         }

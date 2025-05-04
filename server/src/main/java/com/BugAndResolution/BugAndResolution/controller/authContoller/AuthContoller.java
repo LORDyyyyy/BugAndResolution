@@ -48,8 +48,9 @@ public class AuthContoller {
     }
 
     @PostMapping("/logout")
-    public ResponseEntity<Void> logout(@RequestBody LogoutRequest request) {
-        authService.logout(request);
+    public ResponseEntity<Void> logout(@RequestBody LogoutRequest request,
+            HttpServletResponse response) {
+        authService.logout(request, response);
         return ResponseEntity.ok().build();
     }
 
