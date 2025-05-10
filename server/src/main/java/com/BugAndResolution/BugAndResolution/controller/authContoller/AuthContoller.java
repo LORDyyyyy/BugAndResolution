@@ -1,5 +1,6 @@
 package com.BugAndResolution.BugAndResolution.controller.authContoller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import org.springframework.http.ResponseEntity;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.BugAndResolution.BugAndResolution.dto.auth.AuthenticatorRequest;
 import com.BugAndResolution.BugAndResolution.dto.auth.AuthenticatorResponse;
-import com.BugAndResolution.BugAndResolution.dto.auth.LogoutRequest;
 import com.BugAndResolution.BugAndResolution.dto.auth.RegisterRequest;
 import com.BugAndResolution.BugAndResolution.dto.auth.TokenRefreshRequest;
 import com.BugAndResolution.BugAndResolution.service.authServices.AuthService;
@@ -48,8 +48,7 @@ public class AuthContoller {
     }
 
     @PostMapping("/logout")
-    public ResponseEntity<Void> logout(@RequestBody LogoutRequest request,
-            HttpServletResponse response) {
+    public ResponseEntity<Void> logout(HttpServletRequest request, HttpServletResponse response) {
         authService.logout(request, response);
         return ResponseEntity.ok().build();
     }

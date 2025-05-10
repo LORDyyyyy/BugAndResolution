@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import com.BugAndResolution.BugAndResolution.config.jwt.JwtService;
 import com.BugAndResolution.BugAndResolution.dto.auth.AuthenticatorRequest;
 import com.BugAndResolution.BugAndResolution.dto.auth.AuthenticatorResponse;
-import com.BugAndResolution.BugAndResolution.dto.auth.LogoutRequest;
 import com.BugAndResolution.BugAndResolution.dto.auth.RegisterRequest;
 import com.BugAndResolution.BugAndResolution.dto.auth.TokenRefreshRequest;
 import com.BugAndResolution.BugAndResolution.exception.TokenRefreshException;
@@ -26,6 +25,9 @@ import com.BugAndResolution.BugAndResolution.repository.UserRepository;
 import com.BugAndResolution.BugAndResolution.secuirty.UserDetailsImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
@@ -115,25 +117,48 @@ public class AuthService {
                 .build();
     }
 
-    public void logout(LogoutRequest request, HttpServletResponse response) {
-        String refreshToken = request.getRefreshToken();
 
+    public void logout(HttpServletRequest request, HttpServletResponse response) {
+        // Extract refresh token from cookie instead of request body
+        Cookie[] cookies = request.getCookies();
+        String refreshToken = null;
+        
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if ("refreshToken".equals(cookie.getName())) {
+                    refreshToken = cookie.getValue();
+                    break;
+                }
+            }
+        }
+        
+        if (refreshToken == null || refreshToken.isEmpty()) {
+            SecurityContextHolder.clearContext();
+            ResponseCookie deleteCookie = ResponseCookie.from("refreshToken", "")
+                    .httpOnly(true)
+                    .secure(true)
+                    .path("/api/auth/refresh-token")
+                    .maxAge(0)
+                    .sameSite("None")
+                    .build();
+            response.setHeader(HttpHeaders.SET_COOKIE, deleteCookie.toString());
+            return;
+        }
+    
         Optional<RefreshToken> tokenOptional = refreshTokenService.findByToken(refreshToken);
         if (tokenOptional.isPresent()) {
             RefreshToken token = tokenOptional.get();
             refreshTokenService.deleteByUserId(token.getUser().getId());
-            SecurityContextHolder.clearContext();
-                                            ResponseCookie deleteCookie = ResponseCookie.from("refreshToken", "")
-                                                    .httpOnly(true)
-                                                    .secure(true)
-                                                    .path("/api/auth/refresh-token")
-                                                    .maxAge(0)
-                                                    .sameSite("None")
-                                                    .build();
-
-                                            response.setHeader(HttpHeaders.SET_COOKIE, deleteCookie.toString());
-        } else {
-            throw new TokenRefreshException("Invalid refresh token");
         }
-    }
+        
+        SecurityContextHolder.clearContext();
+        ResponseCookie deleteCookie = ResponseCookie.from("refreshToken", "")
+                .httpOnly(true)
+                .secure(true)
+                .path("/api/auth/refresh-token")
+                .maxAge(0)
+                .sameSite("None")
+                .build();
+        response.setHeader(HttpHeaders.SET_COOKIE, deleteCookie.toString());
+    }    
 }
